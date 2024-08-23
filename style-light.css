@@ -1,0 +1,106 @@
+/* style.css */
+
+/* Reseteo básico para márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00e1ff49;
+    font-family: 'Consolas', sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo del reloj */
+#clock {
+    font-size: 5rem;
+    color: #00b28b;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio entre el reloj y los botones */
+}
+
+/* Estilo del selector de formato de 12 o 24 */
+#toggleFormat, #toggleDisplay {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #00796b;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #00796b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px; /* Espacio entre el reloj y el pie de página */
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#toggleFormat:hover, #toggleDisplay:hover{
+    background-color: #ffffff;
+    color: #00796b;
+    transform:  translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del pie de página */
+#footer {
+    font-size: 1.2rem;
+    color: #00796b;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Espacio entre el reloj y el pie de página */
+}
+
+/* Estilo del botón de cambiar tema */
+.theme-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff55;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-button:hover {
+    background-color: #000000c4;
+    transform:  translateY(-1px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
